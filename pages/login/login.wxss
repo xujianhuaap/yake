@@ -1,0 +1,15 @@
+/* pages/main/main.wxss */
+.header_text {
+  color: #00f;
+  text-align: center;
+  font-size: 1em;
+  background-color: #0ff;
+  margin: auto;
+}
+.input{
+  padding-left: 10px;
+  color: #00f;
+  font-size: 0.5em;
+  margin-bottom: 1px;
+  background-color: #0ff03d;
+}

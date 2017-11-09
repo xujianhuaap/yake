@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/login/login",
+    "pages/second/second",
+    "pages/third/third",
+    "pages/chinese_pic/chinese_pic"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "SkullMind",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#B0B0B0",
+    "selectedColor": "#7cfc00",
+    "borderStyle": "white",
+    "backgroundColor": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/ic_first_unselected.png",
+        "text": "first",
+        "selectedIconPath": "images/ic_first.png"
+      },
+      {
+        "pagePath": "pages/second/second",
+        "iconPath": "images/ic_second.png",
+        "text": "second",
+        "selectedIconPath": "images/ic_second_unselected.png"
+      },
+      {
+        "pagePath": "pages/third/third",
+        "iconPath": "images/ic_third.png",
+        "text": "second",
+        "selectedIconPath": "images/ic_third_unselected.png"
+      }
+    ]
+  }
+}

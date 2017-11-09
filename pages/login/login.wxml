@@ -1,0 +1,7 @@
+<!--pages/login/login.wxml-->
+<view class= 'header'>
+  <text>用户登录</text>
+</view>
+<view>
+<input placeholder=''></input>
+</view>
