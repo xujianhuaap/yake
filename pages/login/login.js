@@ -1,20 +1,24 @@
 1// pages/login/login.js
-Page({
 
+const constantsUtils = require('../../constants/constants.js');
+
+
+Page({
   /**
    * 页面的初始数据
    */
   data: {
-   
+   title: '用户登录',
   },
-  bindTapOfJumpToBaidu: function () {
+  bindTapOfToChinesePic: function () {
     // wx.request({
     //   url: "https://baidu.com",
     // })
     // wx.redirectTo({
     //   url: 'https://baidu.com',
     // })
-    wx.navigateTo({
+    wx.setStorageSync(constantsUtils.key_has_register, true)
+    wx.redirectTo({
       url: '../chinese_pic/chinese_pic',
     })
   },
@@ -22,14 +26,16 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    wx.setNavigationBarTitle({
+      title: this.data.title,
+    })
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+    
   },
 
   /**

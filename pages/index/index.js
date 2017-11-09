@@ -1,7 +1,8 @@
 //index.js
 //获取应用实例
 const app = getApp()
-
+const constantUtil = require("../../constants/constants.js")
+const hasRegister = wx.getStorageSync(constantUtil.key_has_register);
 Page({
   data: {
     motto: 'welcome to skull_mind trip',
@@ -19,6 +20,13 @@ Page({
     wx.navigateTo({
       url: '../login/login',
     })
+  },
+  routerBaseUserInfo: function(){
+    if (!wx.getStorageSync(constantUtil.key_has_register)) {
+      wx.navigateTo({
+        url: '../login/login',
+      })
+    }
   },
   onLoad: function () {
     if (app.globalData.userInfo) {
@@ -55,5 +63,9 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+ 
+  onShow: function (options) {
+    this.routerBaseUserInfo()
   }
 })
