@@ -27,15 +27,15 @@
       },
       {
         "pagePath": "pages/second/second",
-        "iconPath": "images/ic_second.png",
+        "iconPath": "images/ic_second_unselected.png",
         "text": "second",
-        "selectedIconPath": "images/ic_second_unselected.png"
+        "selectedIconPath": "images/ic_second.png"
       },
       {
         "pagePath": "pages/third/third",
-        "iconPath": "images/ic_third.png",
-        "text": "second",
-        "selectedIconPath": "images/ic_third_unselected.png"
+        "iconPath": "images/ic_third_unselected.png",
+        "text": "third",
+        "selectedIconPath": "images/ic_third.png"
       }
     ]
   }
