@@ -1,2 +1,5 @@
 <!--pages/second/second.wxml-->
-<text>pages/second/second.wxml</text>
+<view class = 'container_map'>
+  <map id='map' class='map' show-location='true' longitude='{{longitude}}' latitude='{{latitude}}'>
+  </map>
+</view>

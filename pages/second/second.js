@@ -1,11 +1,13 @@
 // pages/second/second.js
+const map = wx.createMapContext('map')
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    longitude: 113.324520,
+    latitude: 23.099994,
   },
 
   /**
@@ -26,7 +28,41 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    var that = this;
+    wx.showToast({
+      title: '' + that.data.longitude,
+    })
+    wx.getSetting({
+      success: res => {
+        if (res.authSetting["scope.userLocation"]) {
+          wx.getLocation({
+            type: 'wgs84',
+            success: function (res) {
+              that.setData({
+                longitude: res.longitude,
+                latitude: res.latitude
+              })
+              console.log("lontitue", res.longitude)
+              console.log("latitudfe", res.latitude)
+              wx.openLocation({
+                latitude: res.latitude,
+                longitude: res.longitude,
+              })
+            },
+          })
+        } else {
+          wx.authorize({
+            scope: 'scope.userLocation',
+            fail() {
+              wx.openSetting({
+
+              })
+            }
+          })
+        }
+      }
+    })
+   
   },
 
   /**

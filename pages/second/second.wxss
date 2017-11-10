@@ -1,1 +1,10 @@
 /* pages/second/second.wxss */
+.container_map{
+  width: 100%;
+  height: 100%;
+}
+.map{
+  width: 100%;
+  height: 400px;
+  margin: auto;
+}
