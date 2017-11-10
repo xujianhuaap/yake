@@ -8,6 +8,25 @@ Page({
   data: {
     longitude: 113.324520,
     latitude: 23.099994,
+    controls: [{
+      id: 1,
+      iconPath: '../../images/ic_third.png',
+      position: {
+        left: 0,
+        top: 300 - 50,
+        width: 50,
+        height: 50
+      },
+      clickable: true
+    }],
+    markers: [{
+      iconPath: "../../images/ic_third.png",
+      id: 0,
+      latitude: 23.099994,
+      longitude: 113.324520,
+      width: 50,
+      height: 50
+    }]
   },
 
   /**
@@ -29,25 +48,38 @@ Page({
    */
   onShow: function () {
     var that = this;
-    wx.showToast({
-      title: '' + that.data.longitude,
-    })
     wx.getSetting({
       success: res => {
         if (res.authSetting["scope.userLocation"]) {
           wx.getLocation({
-            type: 'wgs84',
+            type: 'gcj02',
             success: function (res) {
               that.setData({
                 longitude: res.longitude,
-                latitude: res.latitude
+                latitude: res.latitude,
+                markers: [{
+                  iconPath: "../../images/ic_third.png",
+                  id: 0,
+                  latitude: res.latitude,
+                  longitude: res.longitude,
+                  width: 50,
+                  height: 50,
+                  callout:{
+                    display: 'ALWAYS',
+                    content: "oh",
+                    color: "black",
+                    bgColor: "yellow",
+                    fontSize: 20
+                  }
+                }],
               })
               console.log("lontitue", res.longitude)
               console.log("latitudfe", res.latitude)
-              wx.openLocation({
-                latitude: res.latitude,
-                longitude: res.longitude,
-              })
+              // wx.openLocation({
+              //   latitude: res.latitude,
+              //   longitude: res.longitude,
+              // })
+
             },
           })
         } else {
@@ -98,5 +130,8 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  clickMap: function(){
+      console.log("longitude","unkonwn")
   }
 })
