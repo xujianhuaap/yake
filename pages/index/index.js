@@ -5,7 +5,7 @@ const constantUtil = require("../../constants/constants.js")
 const hasRegister = wx.getStorageSync(constantUtil.key_has_register);
 Page({
   data: {
-    motto: 'welcome to skull_mind trip',
+    motto: '欢迎来到skull-mind空间',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')

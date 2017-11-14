@@ -1,1 +1,22 @@
 /* pages/third/third.wxss */
+.item{
+  width: 100%;
+  display: flex;
+  padding: 15px;
+  margin-bottom: 1px;
+}
+.item_img{
+  width: 30px;
+  height: 30px;
+}
+.item_name{
+  width: 50px;
+  margin-left: 5px;
+  font-size: 0.8em;
+}
+.item_content{
+  position: relative;
+  font-size: 0.9em;
+  top: 20px;
+  left: 5px;
+}
