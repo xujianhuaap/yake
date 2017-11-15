@@ -1,5 +1,4 @@
 // pages/second/second.js
-const map = wx.createMapContext('map')
 Page({
 
   /**
@@ -8,17 +7,31 @@ Page({
   data: {
     longitude: 113.324520,
     latitude: 23.099994,
-    controls: [{
+    scale:15,
+    controls: [
+      {
       id: 1,
-      iconPath: '../../images/ic_third.png',
+      iconPath: '../../pages/second/images/ic_zoom_large.png',
       position: {
         left: 0,
-        top: 300 - 50,
-        width: 50,
-        height: 50
+        top: 30,
+        width: 30,
+        height: 30
       },
       clickable: true
-    }],
+    },
+    {
+      id: 2,
+      iconPath: '../../pages/second/images/ic_zoom_small.png',
+      position: {
+          left: -2,
+          top: 60,
+          width: 30,
+          height: 30
+      },
+      clickable: true
+    }
+    ],
     markers: [{
       iconPath: "../../images/ic_third.png",
       id: 0,
@@ -40,7 +53,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+      this.mapCtx = wx.createMapContext('map');
   },
 
   /**
@@ -58,14 +71,14 @@ Page({
                 longitude: res.longitude,
                 latitude: res.latitude,
                 markers: [{
-                  iconPath: "../../images/ic_third.png",
+                  iconPath: "../../pages/second/images/ic_current_pos.png",
                   id: 0,
                   latitude: res.latitude,
                   longitude: res.longitude,
-                  width: 50,
-                  height: 50,
+                  width: 40,
+                  height: 40,
                   callout:{
-                    display: 'ALWAYS',
+                    display: 'BYCLICK',//By
                     content: "oh",
                     color: "black",
                     bgColor: "yellow",
@@ -133,5 +146,20 @@ Page({
   },
   clickMap: function(){
       console.log("longitude","unkonwn")
-  }
+  },
+  clickControls: function(e){
+    var scale = this.data.scale
+    if (e.controlId == 2){
+        if (scale >3){
+          scale--;
+        }
+    }else if (e.controlId == 1) {
+        if (scale <17){
+            scale++;
+        }
+    }
+    this.setData({
+      scale: scale
+    })
+  },
 })

@@ -1,6 +1,6 @@
 <!--pages/second/second.wxml-->
 <view class = 'container_map'>
   <map id='map' class='map' show-location='true' longitude='{{longitude}}' latitude='{{latitude}}' 
-  bindtap='clickMap' controls='{{controls}}' markers='{{markers}}' scale='10'>
+  bindtap='clickMap' bindcontroltap='clickControls'controls='{{controls}}' markers='{{markers}}' scale='{{scale}}'>
   </map>
 </view>

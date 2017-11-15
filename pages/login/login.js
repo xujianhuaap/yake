@@ -17,6 +17,18 @@ Page({
     // wx.redirectTo({
     //   url: 'https://baidu.com',
     // })
+    wx.request({
+      url: "https://news.baidu.com/",
+      header: {
+      },
+      data: {
+        
+      },
+      method: "get",
+      succes: function(res){
+        console.log("login",res)
+      }
+    })
     wx.setStorageSync(constantsUtils.key_has_register, true)
     wx.redirectTo({
       url: '../chinese_pic/chinese_pic',
