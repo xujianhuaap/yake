@@ -8,7 +8,12 @@ Page({
     motto: '自古谁人初见月，明月到底照何人。',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    banner:[
+      {img:"../../pages/index/images/banner_1.png"},
+      { img: "../../pages/index/images/banner_2.png"},
+      { img: "../../pages/index/images/banner_3.png"},
+    ]
   },
   //事件处理函数
   bindViewTap: function() {

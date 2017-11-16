@@ -5,7 +5,8 @@
     "pages/login/login",
     "pages/second/second",
     "pages/third/third",
-    "pages/chinese_pic/chinese_pic"
+    "pages/chinese_pic/chinese_pic",
+    "pages/it_detail/it_detail"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -22,19 +23,19 @@
       {
         "pagePath": "pages/index/index",
         "iconPath": "images/ic_first_unselected.png",
-        "text": "first",
+        "text": "理想",
         "selectedIconPath": "images/ic_first.png"
       },
       {
         "pagePath": "pages/second/second",
         "iconPath": "images/ic_second_unselected.png",
-        "text": "second",
+        "text": "人生",
         "selectedIconPath": "images/ic_second.png"
       },
       {
         "pagePath": "pages/third/third",
         "iconPath": "images/ic_third_unselected.png",
-        "text": "third",
+        "text": "现实",
         "selectedIconPath": "images/ic_third.png"
       }
     ]

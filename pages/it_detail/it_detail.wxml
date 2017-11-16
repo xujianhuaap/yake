@@ -1,0 +1,2 @@
+<!--pages/it_detail/it_detail.wxml-->
+<web-view src="https://baidu.com"></web-view>

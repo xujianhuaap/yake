@@ -1,32 +1,11 @@
-// pages/third/third.js
+// pages/it_detail/it_detail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    languages:[
-      {
-        name: 'go',
-        image: '../../images/go.jpg',
-        content: 'go is the web lanuage'
-      },
-      {
-        name: 'java',
-        image: '../../images/java.jpg',
-        content: 'java is the web  lanuage'
-      },
-      {
-        name: 'js',
-        image: '../../images/js.jpg',
-        content: 'js is the web front language'
-      },
-      {
-        name: 'python',
-        image: '../../images/python.jpg',
-        content: 'python is the web lanuage'
-      },
-    ]
+  
   },
 
   /**
@@ -47,9 +26,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    wx.setNavigationBarTitle({
-      title: 'IT Languages',
-    })
+  
   },
 
   /**
@@ -85,10 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
   
-  },
-  clickItem: function(){
-    wx.navigateTo({
-      url: '../it_detail/it_detail',
-    })
   }
 })
