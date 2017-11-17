@@ -33,7 +33,7 @@ Page({
     }
     ],
     markers: [{
-      iconPath: "../../images/ic_third.png",
+      iconPath: "../../pages/second/images/ic_current_pos.png",
       id: 0,
       latitude: 23.099994,
       longitude: 113.324520,
