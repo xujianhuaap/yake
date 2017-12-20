@@ -1,0 +1,12 @@
+/* pages/main/main.wxss */
+.header {
+  text-align: center;
+  font-size: 0.8em;
+  margin: auto;
+}
+.input{
+  padding-left: 10px;
+  color: black;
+  font-size: 0.6em;
+  margin-bottom: 1px;
+}

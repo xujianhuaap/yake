@@ -1,0 +1,19 @@
+/* pages/it_detail/it_detail.wxss */ 
+::-webkit-scrollbar{
+  width: 16px;
+}
+.title_item{
+  width: 200rpx;
+  height: 100px;
+  word-break: true;
+  text-align: center;
+  font-size: 0.8em;
+  background-color: #cccccc;
+  margin-right: 1px;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}

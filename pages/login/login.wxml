@@ -1,0 +1,6 @@
+<!--pages/login/login.wxml-->
+<view style='margin-top: 20px'>
+<input class= 'input' placeholder='用户名'></input>
+<input class = 'input' placeholder='用户密码' password='true'></input>
+<button bindtap='bindTapOfToChinesePic' style='margin-top: 20px; font-size: 0.8em'>提交</button>
+</view>

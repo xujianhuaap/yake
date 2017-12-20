@@ -1,0 +1,27 @@
+<!--pages/test/test.wxml-->
+<view>
+  <view  class = 'header' style='text-align: center;'>
+   <div>中国国画</div>
+  </view>
+
+  <view class ='banner'>
+    <text>文以言志，诗以言情，画以言趣</text>
+  </view>
+
+  <!--display inline  -->
+  <view class = "flex_container">
+   <view class= 'left_pic' style='text-align: center; font-size: 0.8em; width: 20dp; flex: 1;'>
+    <text>浓墨是为情</text>
+   </view>
+  <view class= 'right_pic'style='text-align: center; font-size: 0.8em;  width: 20dp; flex: 1;'>
+   <text>淡调是为高</text>
+  </view>
+  </view>
+  <!--float right  -->
+  <view class='flex_container'>
+    <p class= 'txt'>几枝缀长空</p>
+    <image class='img' src='{{picUrl}}' mode='aspectToFill'></image>
+    <text class='txt'>何夕度青竹</text>
+  </view>
+</view>
+

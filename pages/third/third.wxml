@@ -1,0 +1,7 @@
+<!--pages/third/third.wxml-->
+<view class="item" wx:for= "{{languages}}" wx:for-index="index" wx:for-itemName="itemData" style='background-color: #CCCCCC;' bindtap='clickItem'>
+      <image class="item_img" src="{{languages[index].image}}" mode="scaleToFill"></image>
+      <view class= "item_name"> <text>{{languages[index].name}}</text></view>
+      <view class= "item_content"> <text>{{languages[index].content}}</text></view>
+     
+</view>

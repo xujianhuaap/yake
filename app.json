@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/login/login",
+    "pages/second/second",
+    "pages/third/third",
+    "pages/chinese_pic/chinese_pic",
+    "pages/it_detail/it_detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": ""
+  },
+  "tabBar": {
+    "color": "#B0B0B0",
+    "selectedColor": "#7cfc00",
+    "borderStyle": "white",
+    "backgroundColor": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/ic_first_unselected.png",
+        "text": "理想",
+        "selectedIconPath": "images/ic_first.png"
+      },
+      {
+        "pagePath": "pages/second/second",
+        "iconPath": "images/ic_second_unselected.png",
+        "text": "人生",
+        "selectedIconPath": "images/ic_second.png"
+      },
+      {
+        "pagePath": "pages/third/third",
+        "iconPath": "images/ic_third_unselected.png",
+        "text": "现实",
+        "selectedIconPath": "images/ic_third.png"
+      }
+    ]
+  }
+}

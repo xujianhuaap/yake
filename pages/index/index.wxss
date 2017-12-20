@@ -1,0 +1,41 @@
+/**index.wxss**/
+.container{
+  display: block;
+}
+.userinfo {
+  width: 750rpm;
+  display: flex;
+  flex-direction: column;
+  align-items:  center;
+  justify-content: flex-start;
+}
+
+.userinfo-avatar {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+  font-size: 0.6em;
+}
+
+.usermotto {
+  width: 750rpm;
+  text-align: center;
+  margin-top: 10px;
+  word-break: true;
+}
+
+.swiper{
+  width: 750rpm;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 120px;
+}
+
+.swiper_img{
+  width: 780rpm;
+  height: 200rpm;
+}
