@@ -74,7 +74,7 @@ Page({
   
   },
   clickItem: function(e){
-     console.log(e)
+    //  console.log(e)
      if (e != NaN){
        var id = e.currentTarget.id;
        this.setData({
