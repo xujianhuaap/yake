@@ -6,7 +6,8 @@
     "pages/second/second",
     "pages/third/third",
     "pages/chinese_pic/chinese_pic",
-    "pages/it_detail/it_detail"
+    "pages/it_detail/it_detail",
+    "pages/me/me"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -16,27 +17,33 @@
   },
   "tabBar": {
     "color": "#B0B0B0",
-    "selectedColor": "#7cfc00",
+    "selectedColor": "#f24884",
     "borderStyle": "white",
     "backgroundColor": "white",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "images/ic_first_unselected.png",
-        "text": "理想",
-        "selectedIconPath": "images/ic_first.png"
+        "iconPath": "images/ic_nav_home.png",
+        "text": "首页",
+        "selectedIconPath": "images/ic_nav_home_selected.png"
       },
       {
         "pagePath": "pages/second/second",
-        "iconPath": "images/ic_second_unselected.png",
-        "text": "人生",
-        "selectedIconPath": "images/ic_second.png"
+        "iconPath": "images/ic_nav_mall.png",
+        "text": "商城",
+        "selectedIconPath": "images/ic_nav_mall_selected.png"
       },
       {
         "pagePath": "pages/third/third",
-        "iconPath": "images/ic_third_unselected.png",
-        "text": "现实",
-        "selectedIconPath": "images/ic_third.png"
+        "iconPath": "images/ic_nav_circle.png",
+        "text": "社区",
+        "selectedIconPath": "images/ic_nav_circle_selected.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "iconPath": "images/ic_nav_me.png",
+        "text": "个人",
+        "selectedIconPath": "images/ic_nav_me_selected.png"
       }
     ]
   }

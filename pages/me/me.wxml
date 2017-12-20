@@ -1,0 +1,8 @@
+<!--pages/me/me.wxml-->
+ <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname" bindtap='bindTapOfToLogin'>{{userInfo.nickName}}</text>
+    </block>
+  </view>
