@@ -2,6 +2,7 @@
 //获取应用实例
 
 const constantUtil = require("../../constants/constants.js")
+const imgs = require("../../images/imgs.js")
 const hasRegister = wx.getStorageSync(constantUtil.key_has_register);
 Page({
   data: {
@@ -10,9 +11,9 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     banner:[
-      {img:"../../pages/index/images/banner_1.png"},
-      { img: "../../pages/index/images/banner_2.png"},
-      { img: "../../pages/index/images/banner_3.png"},
+      {img: "../../images/nail_01.jpg"},
+      { img: "../../images/nail_02.jpg"},
+      { img: "../../images/nail_03.jpg"},
     ]
   },
   //事件处理函数

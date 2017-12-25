@@ -1,6 +1,15 @@
 <!--pages/second/second.wxml-->
 <view class = 'container_map'>
-  <map id='map' class='map' show-location='true' longitude='{{longitude}}' latitude='{{latitude}}' 
-  bindtap='clickMap' bindcontroltap='clickControls'controls='{{controls}}' markers='{{markers}}' scale='{{scale}}'>
-  </map>
+   <scroll-view scroll-y='true' scroll-to="0" scroll-into-view="7" style='height: 100%;margin-top: 10px; white-space: nowrap;'>
+
+      <block wx:for="{{goods}}" wx:for-index="index" wx:for-itemName="item" >
+          <view class='item_container'>  
+             <view class='item_title'>{{goods[index].title}}</view>
+             <view class= "item_img">  <image  mode="scaleToFill" 
+                src="{{goods[index].img}}"></image></view>
+              <view class='item_price'>{{goods[index].price}} </view>
+          </view>
+        
+     </block> 
+  </scroll-view>
 </view>

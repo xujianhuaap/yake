@@ -1,45 +1,54 @@
 // pages/second/second.js
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    longitude: 113.324520,
-    latitude: 23.099994,
-    scale:15,
-    controls: [
+    goods: [
       {
-      id: 1,
-      iconPath: '../../pages/second/images/ic_zoom_large.png',
-      position: {
-        left: 0,
-        top: 30,
-        width: 30,
-        height: 30
+        id: 1,
+        name: "美甲",
+        price: 30,
+        discount_price: 20,
+        category: 1,
+        img: "../../images/nail_01.jpg",
+        title: "美甲让生活更美好",
+
       },
-      clickable: true
-    },
-    {
-      id: 2,
-      iconPath: '../../pages/second/images/ic_zoom_small.png',
-      position: {
-          left: -2,
-          top: 60,
-          width: 30,
-          height: 30
+      {
+        id: 2,
+        name: "美甲",
+        price: 30,
+        discount_price: 20,
+        category: 1,
+        img: "../../images/nail_02.jpg",
+        title: "美甲灿烂青春",
+
       },
-      clickable: true
-    }
-    ],
-    markers: [{
-      iconPath: "../../pages/second/images/ic_current_pos.png",
-      id: 0,
-      latitude: 23.099994,
-      longitude: 113.324520,
-      width: 50,
-      height: 50
-    }]
+      {
+        id: 3,
+        name: "美甲",
+        price: 30,
+        discount_price: 20,
+        category: 1,
+        img: "../../images/nail_03.jpg",
+        title: "美甲夺目世界",
+
+      },
+      {
+        id: 4,
+        name: "美甲",
+        price: 30,
+        discount_price: 20,
+        category: 1,
+        img: "../../images/nail_04.jpg",
+        title: "美甲夺目世界",
+
+      }
+    ]
+  
   },
 
   /**
@@ -60,54 +69,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    var that = this;
-    wx.getSetting({
-      success: res => {
-        if (res.authSetting["scope.userLocation"]) {
-          wx.getLocation({
-            type: 'gcj02',
-            success: function (res) {
-              that.setData({
-                longitude: res.longitude,
-                latitude: res.latitude,
-                markers: [{
-                  iconPath: "../../pages/second/images/ic_current_pos.png",
-                  id: 0,
-                  latitude: res.latitude,
-                  longitude: res.longitude,
-                  width: 40,
-                  height: 40,
-                  callout:{
-                    display: 'BYCLICK',//By
-                    content: "oh",
-                    color: "black",
-                    bgColor: "yellow",
-                    fontSize: 20
-                  }
-                }],
-              })
-              console.log("lontitue", res.longitude)
-              console.log("latitudfe", res.latitude)
-              // wx.openLocation({
-              //   latitude: res.latitude,
-              //   longitude: res.longitude,
-              // })
-
-            },
-          })
-        } else {
-          wx.authorize({
-            scope: 'scope.userLocation',
-            fail() {
-              wx.openSetting({
-
-              })
-            }
-          })
-        }
-      }
-    })
-   
+    
   },
 
   /**
@@ -143,23 +105,5 @@ Page({
    */
   onShareAppMessage: function () {
   
-  },
-  clickMap: function(){
-      console.log("longitude","unkonwn")
-  },
-  clickControls: function(e){
-    var scale = this.data.scale
-    if (e.controlId == 2){
-        if (scale >3){
-          scale--;
-        }
-    }else if (e.controlId == 1) {
-        if (scale <17){
-            scale++;
-        }
-    }
-    this.setData({
-      scale: scale
-    })
   },
 })

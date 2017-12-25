@@ -3,8 +3,24 @@
   width: 100%;
   height: 100%;
 }
-.map{
-  width: 100%;
-  height: 500px;
-  margin: auto;
+.item_contaner{
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px; 
+  padding-top: 200px;
+}
+.item_title{
+  height: 40 rpm;
+  text-align: bottom;
+  font-size: 0.8em;
+  color: #99cc00;
+}
+.item_img{
+  width: 180rpm;
+  height: 180rpm;
+}
+.item_price{
+  position: absolute;
+  top: 20px;
+  left: 50px;
 }

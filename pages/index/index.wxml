@@ -2,7 +2,7 @@
  
   <view class="usermotto">
     <swiper class='swiper'autoplay="true" indicator-dots='true' indicator-active-color='white' 
-     indicator-color='#999966' interval='5000' duration='2500' circular='true'>
+     indicator-color='#f24884' interval='5000' duration='2500' circular='true'>
       <block wx:for="{{banner}}" wx:for-index="index" wx:for-itemName = "item">
         <swiper-item>
           <image class='swiper_img' src='{{banner[index].img}}' mode='scaleToFill'></image>

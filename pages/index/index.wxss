@@ -12,10 +12,10 @@
   width: 750rpm;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 120px;
+  margin-top: 10px;
 }
 
 .swiper_img{
   width: 780rpm;
-  height: 200rpm;
+  height: 300rpm;
 }
