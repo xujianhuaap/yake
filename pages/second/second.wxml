@@ -5,9 +5,10 @@
       <block wx:for="{{goods}}" wx:for-index="index" wx:for-itemName="item" >
           <view class='item_container'>  
              <view class='item_title'>{{goods[index].title}}</view>
-             <view class= "item_img">  <image  mode="scaleToFill" 
-                src="{{goods[index].img}}"></image></view>
-              <view class='item_price'>{{goods[index].price}} </view>
+             <view class= "item_img_container">  <image  class="item_img" mode="scaleTiFill" 
+                src="{{goods[index].img}}"></image>
+                 <view class='item_price'>{{"￥"+goods[index].price}} </view>
+             </view>
           </view>
         
      </block> 
