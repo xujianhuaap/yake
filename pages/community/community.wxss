@@ -1,0 +1,68 @@
+/* pages/third/third.wxss */
+
+
+.yake_title{
+  width: 750rpx;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #CCCCCC;
+  text-align: center;
+  font-size: 0.8em;
+  color: white;
+  margin-bottom: 20px;
+}
+ .yake_container{
+  width: 502rpx;
+  height: 502rpx;
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start; */
+  padding: 1rpx;
+  position: relative;
+  margin: auto;
+  stroke-width: 5px;
+  stroke: salmon;
+  background: #CCCCCC;
+} 
+.yake_000{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 185rpx;
+  height: 315rpx;
+  stroke-width: 5px;
+  stroke: #CCCCCC;
+}
+
+.yake_001{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 315rpx;
+  height: 185rpx;
+}
+.yake_002{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 185rpx;
+  height: 315rpx;
+}
+
+.yake_003{
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 315rpx;
+  height: 185rpx;
+}
+
+.yake_logo{
+  position: absolute;
+  top: 185rpx;
+  left: 185rpx;
+  width: 130rpx;
+  height: 130rpx;
+}

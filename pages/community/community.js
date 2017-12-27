@@ -48,7 +48,7 @@ Page({
    */
   onShow: function () {
     wx.setNavigationBarTitle({
-      title: 'IT Languages',
+      title: '雅客出品',
     })
   },
 

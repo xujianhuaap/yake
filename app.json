@@ -4,7 +4,7 @@
     "pages/logs/logs",
     "pages/login/login",
     "pages/second/second",
-    "pages/third/third",
+    "pages/community/community",
     "pages/chinese_pic/chinese_pic",
     "pages/it_detail/it_detail",
     "pages/me/me"
@@ -34,7 +34,7 @@
         "selectedIconPath": "images/ic_nav_mall_selected.png"
       },
       {
-        "pagePath": "pages/third/third",
+        "pagePath": "pages/community/community",
         "iconPath": "images/ic_nav_circle.png",
         "text": "社区",
         "selectedIconPath": "images/ic_nav_circle_selected.png"
