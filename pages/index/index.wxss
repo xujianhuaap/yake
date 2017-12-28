@@ -6,16 +6,52 @@
   text-align: center;
   margin-top: 10px;
   word-break: true;
+  font-family:  'Arial Narrow', Arial, sans-serif;
 }
 
 .swiper{
-  width: 750rpm;
+  width: 750rpx;
   margin-right: auto;
   margin-left: auto;
   margin-top: 10px;
 }
 
 .swiper_img{
-  width: 780rpm;
-  height: 300rpm;
+  width: 750rpx;
+  height: 400rpx;
+  
+}
+
+.category_container{
+  width: 750rpx;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50rpx;
+  padding-right: 50rpx;
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background: #CCCCCC;
+}
+
+.category_nail{
+
+  width: 100rpx;
+  height: 100rpx;
+}
+.category_eyeslash{
+  width: 100rpx;
+  height: 100rpx;
+}
+.category_face{
+  width: 100rpx;
+  height: 100rpx;
+}
+.category_pressure{
+
+  width: 100rpx;
+  height: 100rpx;
 }

@@ -15,6 +15,8 @@
     <image class="yake_001" src='../../images/yake_001.jpg' mode="scaleToFill"/>
     <image class="yake_002" src='../../images/yake_002.jpg' mode="scaleToFill"/>
     <image class="yake_003" src='../../images/yake_003.jpg' mode="scaleToFill"/>
-
   </view>  
+  <view class='yake_address'>地址：漯河人民路与交通路交叉口新玛特2楼</view>
+  <view class='yake_mobile'>座机：13838386238</view>
+  <view class='yake_tip'>欢迎来体验</view>
 </view>

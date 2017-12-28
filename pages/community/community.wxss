@@ -66,3 +66,20 @@
   width: 130rpx;
   height: 130rpx;
 }
+
+.yake_address{
+  margin-left: 20px;
+  padding-bottom: 5px;
+  padding-top: 40px;
+  font-size: 0.8em;
+}
+.yake_mobile{
+  margin-left: 20px;
+  padding-bottom: 5px;
+  font-size: 0.8em;
+}
+.yake_tip{
+  margin-left: 20px;
+  padding-bottom: 10px;
+  font-size: 0.8em;
+}
