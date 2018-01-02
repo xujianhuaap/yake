@@ -2,7 +2,7 @@
 
 
 .usermotto {
-  width: 750rpm;
+  width: 750rpx;
   text-align: center;
   margin-top: 10px;
   word-break: true;
@@ -26,10 +26,7 @@
   width: 750rpx;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 50rpx;
-  padding-right: 50rpx;
   display: flex;
-  margin: auto;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -41,6 +38,7 @@
 
   width: 100rpx;
   height: 100rpx;
+  margin-left: 30rpx;
 }
 .category_eyeslash{
   width: 100rpx;
@@ -54,4 +52,5 @@
 
   width: 100rpx;
   height: 100rpx;
+  margin-right: 30rpx;
 }

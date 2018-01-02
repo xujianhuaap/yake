@@ -10,10 +10,10 @@
       </block>
     </swiper>
     <view class='category_container'>
-      <image class="category_nail" src='../../images/category_nail.svg' mode='aspectToFill'></image>
-       <image class="category_face" src='../../images/category_face.svg' mode='aspectToFill'></image>
-        <image class="category_eyeslash" src='../../images/category_eyeslash.svg' mode='aspectToFill'></image>
-         <image class="category_pressure" src='../../images/category_pressure.svg' mode='aspectToFill'></image>
+      <image class="category_nail" src='../../images/category_nail.svg' mode='aspectToFill' bindtap='bindViewTap'></image>
+       <image class="category_face" src='../../images/category_face.svg' mode='aspectToFill'  bindtap='bindViewTap'></image>
+        <image class="category_eyeslash" src='../../images/category_eyeslash.svg' mode='aspectToFill'  bindtap='bindViewTap'></image>
+         <image class="category_pressure" src='../../images/category_pressure.svg' mode='aspectToFill'  bindtap='bindViewTap'></image>
     </view>
     <text class="user-motto">{{motto}}</text>
   </view>

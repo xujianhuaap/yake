@@ -1,5 +1,5 @@
 // pages/it_detail/it_detail.js
-const selectFlag = require("../../pages/it_detail/constants.js")
+const selectFlag = require("../../pages/product_detail/constants.js")
 Page({
   /**
    * 页面的初始数据
@@ -7,14 +7,14 @@ Page({
   data: {
     selected: 1,
     contents:[
-      {title:"目录"},
-      {title: "数据类型"},
-      {title:"条件判断"},
-      {title: "循环"},
-      {title: "方法" },
-      { title: "指针" },
-      { title: "信道" },
-      { title: "错误处理" },
+      {title:"全部"},
+      {title: "美甲"},
+      {title:"美容"},
+      {title: "美睫"},
+      {title: "按摩" },
+      {title: "养生" },
+      {title: "纹身"},
+      {title: "漂唇"},
     ]
   },
 

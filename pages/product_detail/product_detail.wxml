@@ -1,0 +1,23 @@
+<!--pages/it_detail/it_detail.wxml-->
+<view>
+   <scroll-view
+    scroll-x="true"
+    scroll-left="0" 
+    scroll-into-view="item_4" 
+    class="container"
+   >
+    <block 
+      id="block"
+      wx:for="{{contents}}"
+      wx:for-index="index"
+      wx:for-itemName="item" >
+      <view  class='title_item'
+             id='{{"item_"+index}}'
+             bindtap='clickItem'>{{contents[index].title}}
+      </view> 
+    </block>
+  </scroll-view>
+  <view><text>love it;make it.</text></view>
+</view>
+
+
