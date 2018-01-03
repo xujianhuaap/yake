@@ -6,9 +6,52 @@ Page({
    */
   data: {
     selected: 1,
+    goods:[],
     contents:[
-      {title:"全部"},
-      {title: "美甲"},
+      {title:"全部",goods:[]},
+      {
+        title: "美甲", goods: [
+          {
+            id: 1,
+            name: "美甲",
+            price: 30,
+            discount_price: 20,
+            category: 1,
+            img: "../../images/nail_01.jpg",
+            title: "美甲让生活更美好",
+
+          },
+          {
+            id: 2,
+            name: "美甲",
+            price: 30,
+            discount_price: 20,
+            category: 1,
+            img: "../../images/nail_02.jpg",
+            title: "美甲灿烂青春",
+
+          },
+          {
+            id: 3,
+            name: "美甲",
+            price: 30,
+            discount_price: 20,
+            category: 1,
+            img: "../../images/nail_03.jpg",
+            title: "美甲夺目世界",
+
+          },
+          {
+            id: 4,
+            name: "美甲",
+            price: 30,
+            discount_price: 20,
+            category: 1,
+            img: "../../images/nail_04.jpg",
+            title: "美甲夺目世界",
+
+          }
+        ]},
       {title:"美容"},
       {title: "美睫"},
       {title: "按摩" },
@@ -74,11 +117,13 @@ Page({
   
   },
   clickItem: function(e){
-    //  console.log(e)
+     console.log(e)
      if (e != NaN){
        var id = e.currentTarget.id;
+       var googs = e.currentTarget.dataset.goods;
        this.setData({
          selected: 1 << id,
+         goods:googs,
        })
        
      }

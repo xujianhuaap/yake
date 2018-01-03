@@ -14,6 +14,7 @@
       wx:for-itemName="item" >
       <view  wx:if ="{{selected & (1 << index)}}"class='title_item'
              id='{{index}}'
+             data-goods='{{contents[index].goods}}'
              bindtap='clickItem' style='color: red;'>{{contents[index].title}}
       </view> 
         <view  wx:else class='title_item'
@@ -23,7 +24,29 @@
     </block>
   </scroll-view>
   <view class='divide_line'></view>
-  <view><text>love it;make it.</text></view>
+   <scroll-view scroll-y='true' scroll-to="0" scroll-into-view="7" style='height: 100%;margin-top: 10px; white-space: nowrap;'>
+
+      <block wx:for="{{goods}}" wx:for-index="index" wx:for-itemName="item" wx:if='{{index/2==0}}'>
+          <view class='goods_container' >
+             <view class='item_container'>  
+             <view class='item_title'>{{goods[index].title}}</view>
+             <view class= "item_img_container">  <image  class="item_img" mode="scaleTiFill" 
+                src="{{goods[index].img}}"></image>
+                 <view class='item_price'>{{"￥"+goods[index].price}} </view>
+             </view>
+          </view>
+           <view class='item_container'>  
+             <view class='item_title'>{{goods[index+1].title}}</view>
+             <view class= "item_img_container">  <image  class="item_img" mode="scaleTiFill" 
+                src="{{goods[index+1].img}}"></image>
+                 <view class='item_price'>{{"￥"+goods[index+1].price}} </view>
+             </view>
+          </view>
+        
+          </view>
+         
+     </block> 
+  </scroll-view>
 </view>
 
 

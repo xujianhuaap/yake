@@ -31,3 +31,53 @@
   height: 2px;
   background-color: #ccc;
 }
+
+ .item_contaner{
+  display:flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 350rpxrpx;
+  margin-top: 20px;
+  margin-bottom: 20px; 
+  padding-top: 200px;
+}
+.item_title{
+  height: 40 rpm;
+  text-align: bottom;
+  font-size: 0.8em;
+  color: #333333;
+  margin-left: 75rpx;
+  margin-bottom: 10px;
+}
+.item_img_container{
+  position: relative;
+  width: 350rpx;
+  height: 400rpx;
+  margin-left: 75rpx;
+  margin-bottom: 20px;
+}
+.item_price{
+  width: 300rpx;
+  height: 30px;
+  margin: auto;
+  position: absolute;
+  bottom: 0px;
+  background: #cccccc;
+  color: white;
+  font-size: 0.8em;
+  padding-top: 10px;
+  text-align: bottom;
+}
+.item_img{
+   width: 600rpx;
+  height: 400rpx;
+  margin: auto;
+} 
+
+.goods_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-flow: nowrap;
+}
