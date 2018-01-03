@@ -2,8 +2,9 @@
 <view>
    <scroll-view
     scroll-x="true"
-    scroll-left="0" 
-    scroll-into-view="item_4" 
+    scroll-left="0"
+    scroll-top="0"
+    scroll-into-view="4" 
     class="container"
    >
     <block 
@@ -11,12 +12,17 @@
       wx:for="{{contents}}"
       wx:for-index="index"
       wx:for-itemName="item" >
-      <view  class='title_item'
-             id='{{"item_"+index}}'
-             bindtap='clickItem'>{{contents[index].title}}
+      <view  wx:if ="{{selected & (1 << index)}}"class='title_item'
+             id='{{index}}'
+             bindtap='clickItem' style='color: red;'>{{contents[index].title}}
       </view> 
+        <view  wx:else class='title_item'
+             id='{{index}}'
+             bindtap='clickItem' style='color: black'>{{contents[index].title}}
+      </view>
     </block>
   </scroll-view>
+  <view class='divide_line'></view>
   <view><text>love it;make it.</text></view>
 </view>
 
