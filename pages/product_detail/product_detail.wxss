@@ -37,7 +37,7 @@
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  width: 350rpxrpx;
+  width: 375rpx;
   margin-top: 20px;
   margin-bottom: 20px; 
   padding-top: 200px;
@@ -47,22 +47,21 @@
   text-align: bottom;
   font-size: 0.8em;
   color: #333333;
-  margin-left: 75rpx;
   margin-bottom: 10px;
 }
 .item_img_container{
   position: relative;
-  width: 350rpx;
+  width: 375rpx;
   height: 400rpx;
-  margin-left: 75rpx;
   margin-bottom: 20px;
 }
 .item_price{
-  width: 300rpx;
+  width: 375rpx;
   height: 30px;
   margin: auto;
   position: absolute;
   bottom: 0px;
+  left: 0px;
   background: #cccccc;
   color: white;
   font-size: 0.8em;
@@ -70,14 +69,16 @@
   text-align: bottom;
 }
 .item_img{
-   width: 600rpx;
+  width: 375rpx;
   height: 400rpx;
   margin: auto;
 } 
 
 .goods_container{
   display: flex;
+  width: 750rpx;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
+  align-content: flex-start;
   flex-flow: nowrap;
 }
