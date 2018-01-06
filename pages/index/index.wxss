@@ -5,7 +5,6 @@
   width: 750rpx;
   text-align: center;
   margin-top: 10px;
-  word-break: true;
   font-family:  'Arial Narrow', Arial, sans-serif;
 }
 
@@ -28,8 +27,8 @@
   padding-bottom: 10px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-wrap: nowrap;
+  justify-content: center;
   align-items: center;
   background: #CCCCCC;
 }
@@ -38,19 +37,71 @@
 
   width: 100rpx;
   height: 100rpx;
-  margin-left: 30rpx;
+  display: block;
+
 }
 .category_eyeslash{
   width: 100rpx;
   height: 100rpx;
+    display: block;
+    overflow: visible;
 }
 .category_face{
   width: 100rpx;
   height: 100rpx;
+    display: block;
+    overflow: visible;
 }
 .category_pressure{
 
   width: 100rpx;
   height: 100rpx;
-  margin-right: 30rpx;
+    display: block;
+    overflow: visible;
+}
+
+#album_container{
+   width: 750rpx;
+	 height: 200rpx;
+   margin-left: 0px;
+   padding-left: 0px;
+}
+.album_img{
+  width: 400rpx;
+  height: 300rpx;
+  padding: 5px;
+  background-color: rebeccapurple;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+ 
+
+  
+}
+.album_wraper{
+  stroke-width: 20px;
+  stroke: rebeccapurple;
+}
+#album_1{
+ position: absolute;
+ left: 175rpx;
+}
+#album_2{
+  position: absolute;
+ left: 175rpx;
+}
+#album_3{
+ position: absolute;
+ left: 175rpx;
+}
+#iv_prev{
+  width: 150rpx;
+  height: 50rpx;
+  margin-top: 350rpx;
+  display: inline-block;
+}
+#iv_next{
+
 }

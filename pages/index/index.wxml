@@ -15,5 +15,16 @@
         <image class="category_eyeslash" src='../../images/category_eyeslash.svg' mode='aspectToFill'  bindtap='bindViewTap'></image>
          <image class="category_pressure" src='../../images/category_pressure.svg' mode='aspectToFill'  bindtap='bindViewTap'></image>
     </view>
-    <text class="user-motto">{{motto}}</text>
+    <view id="album_cotainer">
+         <image id='album_1' class="album_img"mode='aspectToFill'src="../../images/yake_009.jpg" animation="{{album_animation_1.animation}}"style='z-index:{{album_animation_1.z_index}};position: absolute;'></image>
+  
+          <image id='album_2' class="album_img"mode='aspectToFill'src="../../images/yake_010.jpg" animation="{{album_animation_2.animation}}" style='z-index:{{album_animation_2.z_index}};position: absolute;'></image>
+            
+          <image id='album_3' class="album_img"mode='aspectToFill'src="../../images/yake_008.jpg" animation="{{album_animation_3.animation}}" style='z-index:{{album_animation_3.z_index}};position: absolute;'></image>
+         
+    </view>
+       <view id='iv_prev' bindtap='bindTapOfPreviousPic'>上一张</view>
+    <view id='iv_next' bindtap='bindTapOfNextPic'>下一张</view>
+
+  
   </view>
