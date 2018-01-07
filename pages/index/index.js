@@ -53,9 +53,9 @@ Page({
      var album_2_ani = this.createAlbumAnimation(album_2)
      var album_3_ani = this.createAlbumAnimation(album_3)
 
-     var z_index_1 = album_1_latest_index == 0?3:1;
-     var z_index_2 = album_2_latest_index == 0 ?3:1;
-     var z_index_3 = album_3_latest_index == 0 ? 3:1;
+     var z_index_1 = album_1_latest_index == 0?3:album_1_latest_index==1?2:-1;
+     var z_index_2 = album_2_latest_index == 0 ? 3 : album_2_latest_index == 1 ? 2 : -1;
+     var z_index_3 = album_3_latest_index == 0 ? 3 : album_3_latest_index == 1 ? 2 : -1;
      this.setData({
        album_animation_1: {index: album_1_latest_index,animation:album_1_ani,z_index:z_index_1},
        album_animation_2: { index: album_2_latest_index, animation: album_2_ani,z_index:z_index_2 },
@@ -79,9 +79,9 @@ Page({
     var album_2_ani = this.createAlbumAnimation(album_2)
     var album_3_ani = this.createAlbumAnimation(album_3)
 
-    var z_index_1 = album_1_latest_index == 0 ? 3 : 1;
-    var z_index_2 = album_2_latest_index == 0 ? 3 : 1;
-    var z_index_3 = album_3_latest_index == 0 ? 3 : 1;
+    var z_index_1 = album_1_latest_index == 0 ? 3 : album_1_latest_index == -1 ? 2 : -1;
+    var z_index_2 = album_2_latest_index == 0 ? 3 : album_2_latest_index == -1 ? 2 : -1;
+    var z_index_3 = album_3_latest_index == 0 ? 3 : album_3_latest_index == 1 ? 2 : -1;
     this.setData({
       album_animation_1: { index: album_1_latest_index, animation: album_1_ani, z_index: z_index_1 },
       album_animation_2: { index: album_2_latest_index, animation: album_2_ani, z_index: z_index_2 },
