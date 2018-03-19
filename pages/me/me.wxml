@@ -1,8 +1,36 @@
 <!--pages/me/me.wxml-->
- <view class="userinfo">
+<view>
+   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
       <text class="userinfo-nickname" bindtap='bindTapOfToLogin'>{{userInfo.nickName}}</text>
     </block>
+
   </view>
+   <view class='userinfo-lable'>联系方式：<view class="userinfo-content">{{phone}}</view></view>
+    <view class='userinfo-lable'>电子邮箱：<view class="userinfo-content">{{email}}</view></view>
+    <view class='userinfo-lable'>消费积分：<view class="userinfo-content">{{score_consume}}</view></view>
+    <view id="block">
+    <block 
+      wx:for="{{records}}"
+      wx:for-index="index"
+      wx:for-itemName="item" 
+      style='background-color:#f24884'>
+      <view  class='record_item'
+             id='{{index}}' style='background-color:#eee;margin-bottom:10px;margin-left:20px;margin-right:20px;padding:10px;'>
+             <view class="record_container">
+             <view class='record_id'>{{records[index].id}}</view>
+             <view class='record_date'>{{records[index].date}}</view>
+             </view>
+             <view class="record_container">
+               <view class='record_desc'> {{records[index].desc}} </view>
+                 <view class='record_fee'>  ￥{{records[index].fee}}</view>
+             </view>
+              
+            
+              <view class="record_address ">{{records[index].address}}</view>
+      </view> 
+    </block>
+    </view>
+</view>

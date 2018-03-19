@@ -5,9 +5,12 @@
 .userinfo {
   width: 750rpm;
   display: flex;
+  padding: 10px;
+  margin-bottom: 30px;
   flex-direction: column;
   align-items:  center;
   justify-content: flex-start;
+  background-color: #f24884;
 }
 
 .userinfo-avatar {
@@ -19,4 +22,61 @@
 .userinfo-nickname {
   color: #aaa;
   font-size: 0.6em;
+}
+.userinfo-lable{
+  font-size: 0.8em;
+  padding-left: 30px;
+  padding-bottom: 4px;
+  padding-top: 5px;
+  background-color: #eee;
+  margin-bottom: 1px;
+}
+.userinfo-content{
+  font-size: 1.1em;
+  color: #000;
+  display: inline;
+  margin-right: 30rpx;
+  background-color: #eee;
+}
+
+
+#block{
+  min-height: 300px;
+background-color: #f24884;
+margin-top: 30px;
+padding-top: 30px;
+padding-bottom: 30px;
+}
+.record_container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+}
+.record_id{
+  flex: 1;
+  font-size: 0.8em;
+  color:#aaa;
+}
+.record_date{
+  flex: 1;
+  text-align: right;
+  color:#aaa;
+}
+.record_desc{
+  flex: 1;
+  text-align: right;
+  font-size: 0.8em;
+  color:#aaa;
+}
+.record_fee{
+  flex: 1;
+  font-size: 1.1em;
+  font-style: bold;
+  padding-left: 20px;
+  color:#aaa;
+}
+.record_address{
+  font-size: 0.8em;
+  color:#aaa;
 }

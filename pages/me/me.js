@@ -6,7 +6,27 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    email: "xujianhuaap@gmail.com",
+    phone: "18512177309",
+    score_consume: 197,
+    records:[{
+      id: 18031501,
+      fee: 35,
+      desc:"青春绚丽美甲",
+      usr_id: 1,
+      date: "2018-7-2",
+      addressId: 2,
+      address: "漯河五一路店"
+    },
+      {
+        id: 18031502,
+        fee: 37,
+        desc: "秀气纹眉",
+        usr_id: 1,
+        date: "2018-7-2",
+        addressId: 2,
+        address:"漯河新玛特"
+      }]
   },
 
   /**
