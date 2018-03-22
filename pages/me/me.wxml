@@ -11,7 +11,11 @@
    <view class='userinfo-lable'>联系方式：<view class="userinfo-content">{{phone}}</view></view>
     <view class='userinfo-lable'>电子邮箱：<view class="userinfo-content">{{email}}</view></view>
     <view class='userinfo-lable'>消费积分：<view class="userinfo-content">{{score_consume}}</view></view>
-    <view id="block">
+    <scroll-view id="block"
+    scroll-x="true"
+    scroll-left="0"
+    scroll-top="0"
+    scroll-into-view="4" >
     <block 
       wx:for="{{records}}"
       wx:for-index="index"
@@ -32,5 +36,5 @@
               <view class="record_address ">{{records[index].address}}</view>
       </view> 
     </block>
-    </view>
+    </scroll-view>
 </view>

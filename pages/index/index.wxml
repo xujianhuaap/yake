@@ -16,13 +16,13 @@
          <image class="category_pressure" src='../../images/category_pressure.svg' mode='aspectToFill'  bindtap='bindViewTap'></image>
     </view>
     <view id="album_cotainer">
-            <image id='album_0' class="album_img"mode='aspectToFill'src="{{album[2+album_animation_0.index-selected_album_index].img}}" animation="{{album_animation_0.animation}}" style='z-index:{{album_animation_0.z_index}};position: absolute;'></image>
-         <image id='album_1' class="album_img"mode='aspectToFill'src="{{album[2+album_animation_1.index-selected_album_index].img}}" animation="{{album_animation_1.animation}}"style='z-index:{{album_animation_1.z_index}};position: absolute;'></image>
+            <image id='album_0' class="album_img"mode='aspectToFill'src="{{album[album_animation_0.imgIndex].img}}" animation="{{album_animation_0.animation}}" style='z-index:{{album_animation_0.z_index}};position: absolute;'></image>
+         <image id='album_1' class="album_img"mode='aspectToFill'src="{{album[album_animation_1.imgIndex].img}}" animation="{{album_animation_1.animation}}"style='z-index:{{album_animation_1.z_index}};position: absolute;'></image>
   
-          <image id='album_2' class="album_img"mode='aspectToFill'src="{{album[2+album_animation_2.index-selected_album_index].img}}" animation="{{album_animation_2.animation}}" style='z-index:{{album_animation_2.z_index}};position: absolute;'></image>
+          <image id='album_2' class="album_img"mode='aspectToFill'src="{{album[album_animation_2.imgIndex].img}}" animation="{{album_animation_2.animation}}" style='z-index:{{album_animation_2.z_index}};position: absolute;'></image>
             
-          <image id='album_3' class="album_img"mode='aspectToFill'src="{{album[2+album_animation_3.index-selected_album_index].img}}" animation="{{album_animation_3.animation}}" style='z-index:{{album_animation_3.z_index}};position: absolute;'></image>
-                 <image id='album_4' class="album_img"mode='aspectToFill'src="{{album[2+album_animation_4.index-selected_album_index].img}}" animation="{{album_animation_4.animation}}" style='z-index:{{album_animation_4.z_index}};position: absolute;'></image>
+          <image id='album_3' class="album_img"mode='aspectToFill'src="{{album[album_animation_3.imgIndex].img}}" animation="{{album_animation_3.animation}}" style='z-index:{{album_animation_3.z_index}};position: absolute;'></image>
+                 <image id='album_4' class="album_img"mode='aspectToFill'src="{{album[album_animation_4.imgIndex].img}}" animation="{{album_animation_4.animation}}" style='z-index:{{album_animation_4.z_index}};position: absolute;'></image>
     </view>
        <view id='iv_prev' bindtap='bindTapOfPreviousPic'>上一张</view>
     <view id='iv_next' bindtap='bindTapOfNextPic'>下一张</view>

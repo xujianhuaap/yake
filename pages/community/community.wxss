@@ -9,7 +9,6 @@
   text-align: center;
   font-size: 0.8em;
   color: white;
-  margin-bottom: 20px;
 }
  .yake_container{
   width: 502rpx;
@@ -68,18 +67,25 @@
 }
 
 .yake_address{
+  padding: 10rpx;
   margin-left: 20px;
   padding-bottom: 5px;
   padding-top: 40px;
   font-size: 0.8em;
 }
 .yake_mobile{
+  padding: 10rpx;
   margin-left: 20px;
   padding-bottom: 5px;
   font-size: 0.8em;
 }
 .yake_tip{
-  margin-left: 20px;
+  margin-top: 60rpx;
+  padding: 20rpx;
+  text-align: center;
   padding-bottom: 10px;
-  font-size: 0.8em;
+  font-size: 1.0em;
+   background-color: #f24884;
+  font-style: italic oblique;
+  color:  #fff;
 }

@@ -9,14 +9,18 @@
 <view>
  
   <view class='yake_title'>雅客，美到极致，简到极致</view>
-  <view class='yake_container'>
-    <image class="yake_logo" src='../../images/yake.svg' mode="scaleToFill"/>  
-    <image class="yake_000" src='../../images/yake_000.jpg' mode="scaleToFill"/>
-    <image class="yake_001" src='../../images/yake_001.jpg' mode="scaleToFill"/>
-    <image class="yake_002" src='../../images/yake_002.jpg' mode="scaleToFill"/>
-    <image class="yake_003" src='../../images/yake_003.jpg' mode="scaleToFill"/>
-  </view>  
+  <view style='background-color:#f24884;padding:60rpx'>
+    <view class='yake_container'>
+          <image class="yake_logo" src='../../images/yake.svg' mode="scaleToFill"/>  
+          <image class="yake_000" src='../../images/yake_000.jpg' mode="scaleToFill"/>
+          <image class="yake_001" src='../../images/yake_001.jpg' mode="scaleToFill"/>
+          <image class="yake_002" src='../../images/yake_002.jpg' mode="scaleToFill"/>
+          <image class="yake_003" src='../../images/yake_003.jpg' mode="scaleToFill"/>
+    </view> 
+  </view>
+ 
   <view class='yake_address'>地址：漯河人民路与交通路交叉口新玛特2楼</view>
   <view class='yake_mobile'>座机：13838386238</view>
-  <view class='yake_tip'>欢迎来体验</view>
+  <view class='yake_tip'>欢迎您的光临</view>
+  <view class='divider'></view>
 </view>

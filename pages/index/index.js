@@ -57,7 +57,7 @@ Page({
     })
   },
   bindTapOfNextPic: function(){
-    
+ 
     var selected_album_index = this.data.selected_album_index +1;
 
     var album_0_index = this.data.album_animation_0.index;
@@ -89,17 +89,44 @@ Page({
     var z_index_2 = this.getAlbumZIndex(album_2_index, 1);
     var z_index_3 = this.getAlbumZIndex(album_3_index, 1);
     var z_index_4 = this.getAlbumZIndex(album_4_index, 1);
+    var album_0_img_index = this.data.album_animation_0.imgIndex;
+    var album_1_img_index = this.data.album_animation_1.imgIndex;
+    var album_2_img_index = this.data.album_animation_2.imgIndex;
+    var album_3_img_index = this.data.album_animation_3.imgIndex;
+    var album_4_img_index = this.data.album_animation_4.imgIndex;
 
+    var album_0_img_index_lastest = this.getImgIndex(album_0_img_index, album_0_index, 1);
+    var album_1_img_index_lastest = this.getImgIndex(album_1_img_index, album_1_index, 1);
+    var album_2_img_index_lastest = this.getImgIndex(album_2_img_index, album_2_index, 1);
+    var album_3_img_index_lastest = this.getImgIndex(album_3_img_index, album_3_index, 1);
+    var album_4_img_index_lastest = this.getImgIndex(album_4_img_index, album_4_index, 1);
+    if (album_0_img_index_lastest <1) {
+      return;
+    }
+
+    if (album_1_img_index_lastest <1) {
+      return;
+    }
+    if (album_2_img_index_lastest <1) {
+      return;
+    }
+    if (album_3_img_index_lastest <1) {
+      return;
+    }
+    if (album_4_img_index_lastest <1) {
+      return;
+    }
     this.setData({
       selected_album_index: selected_album_index,
-      album_animation_0: { index: album_0_latest_index, animation: album_0_ani, z_index: z_index_0 },
-      album_animation_1: { index: album_1_latest_index, animation: album_1_ani, z_index: z_index_1 },
-      album_animation_2: { index: album_2_latest_index, animation: album_2_ani, z_index: z_index_2 },
-      album_animation_3: { index: album_3_latest_index, animation: album_3_ani, z_index: z_index_3 },
-      album_animation_4: { index: album_4_latest_index, animation: album_4_ani, z_index: z_index_4 },
+      album_animation_0: { index: album_0_latest_index, animation: album_0_ani, z_index: z_index_0, imgIndex: album_0_img_index_lastest},
+      album_animation_1: { index: album_1_latest_index, animation: album_1_ani, z_index: z_index_1, imgIndex: album_1_img_index_lastest },
+      album_animation_2: { index: album_2_latest_index, animation: album_2_ani, z_index: z_index_2, imgIndex: album_2_img_index_lastest},
+      album_animation_3: { index: album_3_latest_index, animation: album_3_ani, z_index: z_index_3, imgIndex: album_3_img_index_lastest},
+      album_animation_4: { index: album_4_latest_index, animation: album_4_ani, z_index: z_index_4, imgIndex: album_4_img_index_lastest},
     })
   },
   bindTapOfPreviousPic: function(){
+   
     var selected_album_index = this.data.selected_album_index - 1;
 
     var album_0_index = this.data.album_animation_0.index;
@@ -132,13 +159,41 @@ Page({
     var z_index_3 = this.getAlbumZIndex(album_3_index, -1);
     var z_index_4 = this.getAlbumZIndex(album_4_index, -1);
 
+    var album_0_img_index = this.data.album_animation_0.imgIndex;
+    var album_1_img_index = this.data.album_animation_1.imgIndex;
+    var album_2_img_index = this.data.album_animation_2.imgIndex;
+    var album_3_img_index = this.data.album_animation_3.imgIndex;
+    var album_4_img_index = this.data.album_animation_4.imgIndex;
+
+    var album_0_img_index_lastest = this.getImgIndex(album_0_img_index, album_0_index,-1);
+    var album_1_img_index_lastest = this.getImgIndex(album_1_img_index, album_1_index, -1);
+    var album_2_img_index_lastest = this.getImgIndex(album_2_img_index, album_2_index, -1);
+    var album_3_img_index_lastest = this.getImgIndex(album_3_img_index, album_3_index, -1);
+    var album_4_img_index_lastest = this.getImgIndex(album_4_img_index, album_4_index, -1);
+
+    if (album_0_img_index_lastest >= this.data.album.length) {
+      return;
+    }
+
+    if (album_1_img_index_lastest >= this.data.album.length) {
+      return;
+    }
+    if (album_2_img_index_lastest >= this.data.album.length) {
+      return;
+    }
+    if (album_3_img_index_lastest >= this.data.album.length) {
+      return;
+    }
+    if (album_4_img_index_lastest >= this.data.album.length) {
+      return;
+    }
     this.setData({
       selected_album_index: selected_album_index,
-      album_animation_0: { index: album_0_latest_index, animation: album_0_ani, z_index: z_index_0 },
-      album_animation_1: { index: album_1_latest_index, animation: album_1_ani, z_index: z_index_1 },
-      album_animation_2: { index: album_2_latest_index, animation: album_2_ani, z_index: z_index_2 },
-      album_animation_3: { index: album_3_latest_index, animation: album_3_ani, z_index: z_index_3 },
-      album_animation_4: { index: album_4_latest_index, animation: album_4_ani, z_index: z_index_4 },
+      album_animation_0: { index: album_0_latest_index, animation: album_0_ani, z_index: z_index_0, imgIndex: album_0_img_index_lastest},
+      album_animation_1: { index: album_1_latest_index, animation: album_1_ani, z_index: z_index_1,imgIndex: album_1_img_index_lastest},
+      album_animation_2: { index: album_2_latest_index, animation: album_2_ani, z_index: z_index_2, imgIndex: album_2_img_index_lastest },
+      album_animation_3: { index: album_3_latest_index, animation: album_3_ani, z_index: z_index_3, imgIndex: album_3_img_index_lastest},
+      album_animation_4: { index: album_4_latest_index, animation: album_4_ani, z_index: z_index_4, imgIndex: album_4_img_index_lastest},
     })
   },
   onLoad: function () {
@@ -150,11 +205,11 @@ Page({
     var album_1_ani = this.createAlbumAnimation("left")
     var album_3_ani = this.createAlbumAnimation("right")
     this.setData({
-      album_animation_0: { index: -2, animation: album_1_ani, z_index: 1},
-      album_animation_1: { index: -1, animation: album_1_ani,z_index:2},
-      album_animation_2: { index: 0, animation: {},z_index:3 },
-      album_animation_3: { index: 1, animation: album_3_ani,z_index:2},
-      album_animation_4: { index: 2, animation: album_3_ani, z_index: 1},
+      album_animation_0: { index: -2, animation: album_1_ani, z_index: 1,imgIndex:0},
+      album_animation_1: { index: -1, animation: album_1_ani,z_index:2,imgIndex:1},
+      album_animation_2: { index: 0, animation: {}, z_index: 3, imgIndex:2},
+      album_animation_3: { index: 1, animation: album_3_ani, z_index: 2, imgIndex: 3},
+      album_animation_4: { index: 2, animation: album_3_ani, z_index: 1, imgIndex: 4},
     })
   },
 
@@ -281,11 +336,17 @@ Page({
     }
 
   },
-    getImgIndex: function(currentIndex ,selectedIndex,direct){
+    getImgIndex: function(currentImgIndex ,currentIndex,direct){
         if(direct == 1 ){
-          return selectedIndex -2
+          if (currentIndex == 2) {
+            return currentImgIndex -5
+          }
+          return currentImgIndex
         }else if(direct == -1 ){
-          return selectedIndex + 2
+          if(currentIndex == -2){
+             return currentImgIndex + 5
+          }
+          return currentImgIndex
         }
     }
 })
