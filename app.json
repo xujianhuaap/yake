@@ -6,7 +6,7 @@
     "pages/second/second",
     "pages/community/community",
     "pages/chinese_pic/chinese_pic",
-    "pages/product_detail/product_detail",
+    "pages/product_list/product_list",
     "pages/me/me"
   ],
   "window": {

@@ -6,7 +6,7 @@
 }
 .title_item{
   margin: auto;
-  display: inline-block;
+  display: inline;
   text-align: center;
   font-size: 0.9em;
   padding-left: 15px;
@@ -18,12 +18,13 @@
   padding-top: 0px;
   padding-bottom: 2px;
   background-color: #fff;
-  white-space: nowrap;
+  width: 100%;
+   white-space: nowrap;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-flow: nowrap;
+  flex-flow: nowrap; 
 
 }
 .divide_line{

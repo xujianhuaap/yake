@@ -6,6 +6,7 @@ const imgs = require("../../images/imgs.js")
 const hasRegister = wx.getStorageSync(constantUtil.key_has_register);
 Page({
   data: {
+    init:true,
     selected_album_index: 0,
     album_aimation_0:{
 
@@ -53,7 +54,7 @@ Page({
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
-      url: '../product_detail/product_detail'
+      url: '../product_list/product_list'
     })
   },
   bindTapOfNextPic: function(){
@@ -100,20 +101,20 @@ Page({
     var album_2_img_index_lastest = this.getImgIndex(album_2_img_index, album_2_index, 1);
     var album_3_img_index_lastest = this.getImgIndex(album_3_img_index, album_3_index, 1);
     var album_4_img_index_lastest = this.getImgIndex(album_4_img_index, album_4_index, 1);
-    if (album_0_img_index_lastest <1) {
+    if (album_0_img_index_lastest <0) {
       return;
     }
 
-    if (album_1_img_index_lastest <1) {
+    if (album_1_img_index_lastest <0) {
       return;
     }
-    if (album_2_img_index_lastest <1) {
+    if (album_2_img_index_lastest <0) {
       return;
     }
-    if (album_3_img_index_lastest <1) {
+    if (album_3_img_index_lastest <0) {
       return;
     }
-    if (album_4_img_index_lastest <1) {
+    if (album_4_img_index_lastest <0) {
       return;
     }
     this.setData({
@@ -202,15 +203,19 @@ Page({
  
  
   onShow: function (options) {
-    var album_1_ani = this.createAlbumAnimation("left")
-    var album_3_ani = this.createAlbumAnimation("right")
-    this.setData({
-      album_animation_0: { index: -2, animation: album_1_ani, z_index: 1,imgIndex:0},
-      album_animation_1: { index: -1, animation: album_1_ani,z_index:2,imgIndex:1},
-      album_animation_2: { index: 0, animation: {}, z_index: 3, imgIndex:2},
-      album_animation_3: { index: 1, animation: album_3_ani, z_index: 2, imgIndex: 3},
-      album_animation_4: { index: 2, animation: album_3_ani, z_index: 1, imgIndex: 4},
-    })
+    if(this.data.init){
+      this.setData({init:false})
+      var album_1_ani = this.createAlbumAnimation("left")
+      var album_3_ani = this.createAlbumAnimation("right")
+      this.setData({
+        album_animation_0: { index: -2, animation: album_1_ani, z_index: 1, imgIndex: 0 },
+        album_animation_1: { index: -1, animation: album_1_ani, z_index: 2, imgIndex: 1 },
+        album_animation_2: { index: 0, animation: {}, z_index: 3, imgIndex: 2 },
+        album_animation_3: { index: 1, animation: album_3_ani, z_index: 2, imgIndex: 3 },
+        album_animation_4: { index: 2, animation: album_3_ani, z_index: 1, imgIndex: 4 },
+      })
+    }
+   
   },
 
   createAlbumAnimation: function(position){

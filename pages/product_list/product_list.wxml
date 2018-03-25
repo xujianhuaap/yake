@@ -1,10 +1,7 @@
 <!--pages/it_detail/it_detail.wxml-->
 <view>
    <scroll-view
-    scroll-x="true"
-    scroll-left="0"
-    scroll-top="0"
-    scroll-into-view="4" 
+    scroll-x style="width: 200px"
     class="container"
    >
     <block 
@@ -14,7 +11,6 @@
       wx:for-itemName="item" >
       <view  wx:if ="{{selected & (1 << index)}}"class='title_item'
              id='{{index}}'
-             data-goods='{{contents[index].goods}}'
              bindtap='clickItem' style='color: red;'>{{contents[index].title}}
       </view> 
         <view  wx:else class='title_item'
