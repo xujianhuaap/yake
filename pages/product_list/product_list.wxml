@@ -1,10 +1,11 @@
 <!--pages/it_detail/it_detail.wxml-->
 <view>
    <scroll-view
-    scroll-x style="width: 200px"
-    class="container"
+    scroll-x
+   
    >
-    <block 
+   <view  class="container">
+       <block 
       id="block"
       wx:for="{{contents}}"
       wx:for-index="index"
@@ -18,6 +19,8 @@
              bindtap='clickItem' style='color: black'>{{contents[index].title}}
       </view>
     </block>
+   </view>
+   
   </scroll-view>
   <view class='divide_line'></view>
    <scroll-view scroll-y='true'

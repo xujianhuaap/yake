@@ -5,26 +5,23 @@
   background-color: white;
 }
 .title_item{
-  margin: auto;
-  display: inline;
+
   text-align: center;
   font-size: 0.9em;
   padding-left: 15px;
   padding-right: 15px;
   background-color: #fff;
+  white-space: nowrap;
 }
 .container{
-  margin: auto;
   padding-top: 0px;
   padding-bottom: 2px;
   background-color: #fff;
-  width: 100%;
-   white-space: nowrap;
+  width: 750rpx;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-flow: nowrap; 
+  justify-content: flex-start;
+  align-items: flex-start;
 
 }
 .divide_line{

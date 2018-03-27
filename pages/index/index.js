@@ -2,8 +2,8 @@
 //获取应用实例
 
 const constantUtil = require("../../constants/constants.js")
-const imgs = require("../../images/imgs.js")
 const hasRegister = wx.getStorageSync(constantUtil.key_has_register);
+const base_url = constantUtil.base_url;
 Page({
   data: {
     init:true,
@@ -27,17 +27,17 @@ Page({
 
     },
     album:[
-      {img:"../../images/yake_001.jpg",title:"我们不一样"},
-      { img: "../../images/yake_002.jpg", title: "美无止境" },
-      { img: "../../images/yake_003.jpg", title: "做自己就好" },
-      { img: "../../images/yake_004.jpg", title: "燃烧自己的美" },
-      { img: "../../images/yake_005.jpg", title: "肆意的青春" },
-      { img: "../../images/yake_006.jpg", title: "现在就行动" },
-      { img: "../../images/yake_007.jpg", title: "生活不是咸鱼" },
-      { img: "../../images/yake_008.jpg", title: "靓丽给你看" },
-      { img: "../../images/yake_009.jpg", title: "点亮平庸" },
-      { img: "../../images/yake_010.jpg", title: "点亮平庸" },
-      { img: "../../images/yake_011.jpg", title: "点亮平庸" },
+      {img:base_url+"/api/image/nail_01.jpg",title:"我们不一样"},
+      { img:base_url+"api/image/nail_02.jpg", title: "美无止境" },
+      { img: base_url +"api/image/nail_03.jpg", title: "做自己就好" },
+      { img: base_url +"api/image/nail_04.jpg", title: "燃烧自己的美" },
+      { img: base_url +"api/image/yake_005.jpg", title: "肆意的青春" },
+      { img: base_url +"api/image/yake_006.jpg", title: "现在就行动" },
+      { img: base_url +"api/image/yake_007.jpg", title: "生活不是咸鱼" },
+      { img: base_url +"api/image/yake_008.jpg", title: "靓丽给你看" },
+      { img: base_url +"api/image/yake_009.jpg", title: "点亮平庸" },
+      { img: base_url +"api/image/yake_010.jpg", title: "点亮平庸" },
+      { img: base_url +"api/image/yake_011.jpg", title: "点亮平庸" },
 
     ],
     motto: '雅客打造轻奢美型第一品牌',
@@ -45,9 +45,12 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     banner:[
-      {img: "../../images/nail_01.jpg"},
-      { img: "../../images/nail_02.jpg"},
-      { img: "../../images/nail_03.jpg"},
+      { img: base_url + "api/image/yake_000.jpg"},
+      { img: base_url + "api/image/yake_001.jpg" },
+      { img: base_url +"api/image/yake_002.jpg"},
+      { img: base_url +"api/image/yake_003.jpg"},
+      { img: base_url + "api/image/yake_005.jpg" },
+      { img: base_url + "api/image/yake_006.jpg" }
     ],
     
   },
